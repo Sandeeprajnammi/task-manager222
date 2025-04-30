@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+Task-manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A Task Manager Application helps users organize and track their tasks. The main objective is to allow users to create, edit, delete, and manage tasks efficiently. Here's a simple overview of its working and key components:
 
-In the project directory, you can run:
+Working of a Task Manager:
+Create Tasks: Users can add new tasks by entering relevant details such as task name, description, priority, and due date.
 
-### `npm start`
+View Tasks: All tasks are displayed in a list with their details. Users can see important information like task name, due date, and status.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Edit Tasks: Users can modify existing tasks to update any details like priority or due date.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Delete Tasks: If a task is no longer needed, users can remove it from the list.
 
-### `npm test`
+Mark as Completed: Users can mark tasks as completed when they are finished. Completed tasks are often displayed differently (e.g., with a strikethrough).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Filter and Sort: Users can filter tasks based on criteria such as priority or due date. They can also sort tasks to view them in a particular order.
 
-### `npm run build`
+Key Components of a Task Manager:
+User Interface (UI): This is the part the user interacts with. It includes:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Task List: A display of all tasks with key details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Task Form: A form to add or edit tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Filters: Options to filter tasks by priority or status.
 
-### `npm run eject`
+State Management: The application keeps track of task data, including which tasks are pending or completed. This data is managed within the app to ensure the UI is always up-to-date.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Task Model: Each task has several attributes:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ID: A unique identifier for the task.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Title: The task’s name.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Description: Detailed information about the task.
 
-## Learn More
+Due Date: The deadline for completing the task.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Priority: The task's urgency (e.g., high, medium, low).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Status: Whether the task is completed or still pending.
 
-### Code Splitting
+API (Optional): If the tasks are stored in a database, the application communicates with a server through an API to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create tasks: Adding new tasks to the system.
 
-### Analyzing the Bundle Size
+Retrieve tasks: Fetching existing tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Update tasks: Modifying task details.
 
-### Making a Progressive Web App
+Delete tasks: Removing tasks from the system.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Persistence: Task data is stored either in a database or locally on the user's device so that the data persists even after the user closes the app.
 
-### Advanced Configuration
+Basic Flow of a Task Manager:
+The user opens the app and sees the list of tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The user can create a new task by filling out a form.
 
-### Deployment
+The task is added to the list and displayed to the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The user can edit, delete, or mark the task as completed.
 
-### `npm run build` fails to minify
+The app allows users to filter and sort tasks to manage them efficiently.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The goal of a task manager is to simplify task tracking and help users stay organized by providing an easy way to add, view, and manage their tasks.
